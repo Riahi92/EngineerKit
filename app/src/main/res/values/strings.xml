@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">EngineerKit</string>
+    <string name="tagline">One App. Every Engineering Tool.</string>
+    <string name="tagline_fr">Une seule application. Tous vos outils d\'ingénierie.</string>
+    <string name="search_placeholder">Rechercher un outil d\'ingénierie...</string>
+    <string name="nav_home">Accueil</string>
+    <string name="nav_tools">Outils</string>
+    <string name="nav_search">Recherche</string>
+    <string name="nav_favorites">Favoris</string>
+    <string name="nav_profile">Profil</string>
+    <string name="coming_soon">Bientôt disponible</string>
+    <string name="category_details">Détails de la catégorie</string>
+    <string name="empty_favorites_title">Aucun favori enregistré</string>
+    <string name="empty_favorites_desc">Ajoutez vos outils les plus fréquents en favoris pour y accéder en un instant.</string>
+    <string name="empty_recents_title">Aucun outil récent</string>
+    <string name="empty_recents_desc">Explorez les catégories et ouvrez un outil pour le retrouver ici.</string>
+    <string name="empty_search_title">Aucun résultat trouvé</string>
+    <string name="empty_search_desc">Essayez un autre mot-clé (ex: Ohm, Poutre, Reynolds, Béton...)</string>
+</resources>

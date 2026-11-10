@@ -1,0 +1,6 @@
+{
+  "name": "EngineerKit",
+  "description": "Boîte à outils tout-en-un d'ingénierie native Android : 12 disciplines, calculs, fiches techniques et recherche instantanée.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
