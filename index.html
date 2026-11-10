@@ -5,155 +5,429 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Politique de confidentialité de l'application Android EngineerKit.">
+  <meta name="theme-color" content="#102449">
   <title>Politique de confidentialité | EngineerKit</title>
   <style>
     :root {
       --primary: #2563eb;
-      --background: #f4f7fc;
-      --text: #1e293b;
+      --dark: #102449;
+      --text: #243247;
       --muted: #64748b;
+      --bg: #f3f6fb;
+      --border: #e2e8f0;
     }
+
     * { box-sizing: border-box; }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: var(--background);
+      font-family: system-ui, -apple-system, "Segoe UI",
+                   Arial, sans-serif;
+      background: var(--bg);
       color: var(--text);
       line-height: 1.75;
     }
+
     header {
       background: linear-gradient(135deg, #102449, #2563eb);
       color: white;
       text-align: center;
-      padding: 55px 20px;
+      padding: 65px 20px 75px;
     }
-    header h1 { margin: 0; font-size: 32px; }
-    header p { color: #dbeafe; }
+
+    .logo {
+      display: inline-block;
+      padding: 8px 18px;
+      border: 1px solid #ffffff55;
+      border-radius: 30px;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    header h1 {
+      font-size: clamp(27px, 5vw, 40px);
+      margin: 0 0 10px;
+    }
+
+    header p { color: #dbeafe; margin: 5px; }
+
     main {
-      max-width: 850px;
-      margin: -20px auto 40px;
-      padding: 35px;
+      max-width: 900px;
+      margin: -35px auto 45px;
+      padding: 42px;
       background: white;
-      border-radius: 16px;
-      box-shadow: 0 8px 30px #1e293b12;
+      border-radius: 18px;
+      box-shadow: 0 10px 40px #10244912;
+      position: relative;
     }
+
+    section {
+      margin-bottom: 30px;
+    }
+
     h2 {
       color: #1d4ed8;
-      font-size: 20px;
-      margin-top: 30px;
+      font-size: 21px;
+      margin: 0 0 12px;
+      padding-bottom: 9px;
+      border-bottom: 1px solid var(--border);
     }
-    a { color: var(--primary); }
+
+    h3 {
+      color: var(--dark);
+      font-size: 17px;
+      margin-top: 20px;
+    }
+
+    p { margin: 10px 0; }
+    ul, ol { padding-left: 25px; }
+    li { margin-bottom: 7px; }
+
+    a {
+      color: var(--primary);
+      overflow-wrap: anywhere;
+    }
+
     .notice {
+      padding: 18px 22px;
       background: #eff6ff;
       border-left: 4px solid var(--primary);
-      padding: 16px;
       border-radius: 8px;
+      margin: 20px 0;
     }
-    footer {
-      text-align: center;
+
+    .contact {
+      padding: 22px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .meta {
       color: var(--muted);
-      padding: 20px;
       font-size: 14px;
     }
-    @media(max-width:600px) {
-      header h1 { font-size: 25px; }
-      main { margin: 0 12px 25px; padding: 22px; }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 650px) {
+      header { padding: 45px 15px 65px; }
+      main {
+        margin: -30px 12px 25px;
+        padding: 24px 19px;
+      }
+      h2 { font-size: 19px; }
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <h1>EngineerKit</h1>
-    <p>Politique de confidentialité</p>
-    <p>Dernière mise à jour : 10 novembre 2026</p>
-  </header>
 
-  <main>
-    <h2>1. Présentation</h2>
+<header>
+  <div class="logo">ENGINEERKIT · ANDROID</div>
+  <h1>Politique de confidentialité</h1>
+  <p>Protection des données et respect de la vie privée</p>
+  <p>Dernière mise à jour : 10 novembre 2026</p>
+</header>
+
+<main>
+
+<section>
+  <h2>1. Présentation</h2>
+  <p>
+    EngineerKit est une application Android développée
+    par Marwen Riahi, destinée aux étudiants, ingénieurs
+    et professionnels des différentes disciplines
+    de l'ingénierie.
+  </p>
+  <p>
+    Elle propose des outils techniques, des calculateurs
+    scientifiques, des convertisseurs d'unités et
+    diverses fonctionnalités facilitant les activités
+    d'ingénierie.
+  </p>
+  <p>
+    EngineerKit est conçue pour fonctionner localement,
+    sans nécessiter de création de compte ni de
+    connexion Internet.
+  </p>
+</section>
+
+<section>
+  <h2>2. Données collectées et traitées</h2>
+  <p>
+    Dans sa version actuelle, EngineerKit ne collecte
+    aucune donnée personnelle identifiable et ne
+    transmet aucune donnée utilisateur à des
+    serveurs externes.
+  </p>
+
+  <h3>2.1. Données des calculateurs</h3>
+  <p>
+    Les valeurs numériques et paramètres techniques
+    saisis sont traités localement dans la mémoire
+    de l'appareil.
+  </p>
+  <p>
+    Ces informations ne sont pas transmises à des
+    tiers et ne sont pas enregistrées de manière
+    permanente.
+  </p>
+
+  <h3>2.2. Préférences locales</h3>
+  <p>
+    EngineerKit conserve certaines préférences
+    dans le stockage privé de l'application :
+  </p>
+  <ul>
+    <li>Le thème d'affichage sélectionné.</li>
+    <li>Le système d'unités de mesure utilisé.</li>
+    <li>La précision décimale des résultats.</li>
+    <li>Les outils ajoutés aux favoris.</li>
+    <li>Les dix derniers outils consultés.</li>
+  </ul>
+  <p>
+    Ces préférences sont enregistrées localement
+    à l'aide de SharedPreferences d'Android.
+  </p>
+
+  <h3>2.3. Presse-papiers</h3>
+  <p>
+    L'utilisateur peut copier certains résultats
+    de calcul dans le presse-papiers de son appareil.
+    Cette opération intervient uniquement à sa demande.
+    EngineerKit ne lit pas le contenu précédemment
+    enregistré dans le presse-papiers.
+  </p>
+</section>
+
+<section>
+  <h2>3. Utilisation des données</h2>
+  <p>
+    Les informations traitées par EngineerKit servent
+    exclusivement à :
+  </p>
+  <ul>
+    <li>Effectuer les calculs techniques demandés.</li>
+    <li>Afficher les résultats des opérations.</li>
+    <li>Enregistrer les préférences de configuration.</li>
+    <li>Gérer les outils favoris.</li>
+    <li>Afficher les outils récemment consultés.</li>
+    <li>Faciliter la navigation dans l'application.</li>
+  </ul>
+  <p>
+    Ces informations ne sont pas utilisées à des fins
+    de profilage publicitaire ou de suivi comportemental.
+  </p>
+</section>
+
+<section>
+  <h2>4. Partage et transmission des données</h2>
+  <p>
+    Dans sa version actuelle, EngineerKit fonctionne
+    entièrement hors ligne.
+  </p>
+  <p>
+    L'application ne dispose pas de la permission
+    Android d'accès à Internet et ne transmet aucune
+    donnée utilisateur vers des serveurs externes.
+  </p>
+  <p>
+    Elle ne vend, ne loue et ne partage aucune donnée
+    personnelle avec des annonceurs ou partenaires
+    commerciaux.
+  </p>
+  <p>
+    Aucun service d'analyse comportementale,
+    d'authentification externe ou de suivi publicitaire
+    n'est actuellement intégré.
+  </p>
+</section>
+
+<section>
+  <h2>5. Stockage et sécurité des données</h2>
+  <p>
+    Les préférences sont conservées dans l'espace
+    de stockage privé de l'application, protégé
+    par les mécanismes de sécurité d'Android.
+  </p>
+  <p>
+    EngineerKit utilise le mode
+    <strong>Context.MODE_PRIVATE</strong> pour
+    limiter l'accès aux préférences enregistrées.
+  </p>
+  <p>
+    Les données de configuration ne font pas
+    l'objet d'un chiffrement supplémentaire
+    propre à l'application.
+  </p>
+  <p>
+    Selon les paramètres de sauvegarde Android,
+    certaines préférences peuvent être incluses
+    dans les sauvegardes automatiques associées
+    au compte Google de l'utilisateur.
+  </p>
+  <p>
+    La gestion de ces sauvegardes relève des
+    mécanismes du système Android et du service
+    de sauvegarde utilisé.
+  </p>
+</section>
+
+<section>
+  <h2>6. Publicités et services tiers</h2>
+
+  <div class="notice">
+    <strong>Version actuelle sans publicité</strong>
     <p>
-      EngineerKit est une application Android destinée
-      aux étudiants et aux professionnels de l'ingénierie.
-      Elle propose des outils techniques et des calculateurs
-      pour faciliter les activités d'ingénierie.
+      EngineerKit n'affiche actuellement aucune
+      publicité et n'intègre pas Google AdMob.
     </p>
+  </div>
 
-    <h2>2. Données traitées</h2>
-    <p>
-      L'application traite les valeurs saisies par les
-      utilisateurs pour effectuer des calculs techniques.
-      Les éventuelles opérations de collecte, de stockage
-      et de transmission de données doivent être décrites
-      conformément aux fonctionnalités réellement intégrées.
-    </p>
+  <p>
+    Une intégration de Google AdMob pourra être
+    envisagée dans une future mise à jour.
+  </p>
+  <p>
+    Si des services publicitaires sont ajoutés,
+    cette politique sera actualisée avant leur
+    déploiement afin de préciser les données
+    susceptibles d'être collectées, leurs finalités,
+    les partenaires concernés et les choix de
+    confidentialité proposés aux utilisateurs.
+  </p>
+  <p>
+    Les déclarations de confidentialité publiées
+    sur Google Play seront également mises à jour.
+  </p>
+</section>
 
-    <h2>3. Utilisation des données</h2>
-    <p>
-      Les données techniques saisies servent à réaliser
-      les calculs demandés par l'utilisateur et à assurer
-      le fonctionnement des outils proposés.
-    </p>
+<section>
+  <h2>7. Conservation et suppression des données</h2>
+  <p>
+    Les préférences locales restent enregistrées
+    tant que l'application demeure installée,
+    sauf si l'utilisateur décide de les effacer.
+  </p>
+  <p>
+    Pour supprimer les données locales :
+  </p>
+  <ol>
+    <li>Ouvrir les paramètres de l'appareil Android.</li>
+    <li>Accéder à la rubrique Applications.</li>
+    <li>Sélectionner EngineerKit.</li>
+    <li>Ouvrir la section Stockage.</li>
+    <li>Choisir « Effacer les données ».</li>
+  </ol>
+  <p>
+    La désinstallation supprime également les données
+    locales de l'application sur l'appareil.
+  </p>
+  <p>
+    Les éventuelles sauvegardes Android déjà
+    conservées peuvent rester soumises aux règles
+    du service de sauvegarde utilisé.
+  </p>
+  <p>
+    EngineerKit ne dispose d'aucune base de données
+    utilisateur distante ni de compte utilisateur
+    nécessitant une procédure de suppression.
+  </p>
+</section>
 
-    <h2>4. Stockage et sécurité</h2>
-    <p>
-      Les modalités de stockage, de transmission et de
-      protection des données doivent correspondre aux
-      mécanismes effectivement utilisés par EngineerKit.
-    </p>
+<section>
+  <h2>8. Autorisations Android</h2>
+  <p>
+    Dans sa version actuelle, EngineerKit ne demande
+    aucune autorisation Android sensible.
+  </p>
+  <p>L'application ne sollicite notamment pas l'accès :</p>
+  <ul>
+    <li>À la localisation géographique.</li>
+    <li>À l'appareil photo.</li>
+    <li>Au microphone.</li>
+    <li>Aux contacts.</li>
+    <li>Aux fichiers personnels.</li>
+    <li>Aux SMS ou aux appels téléphoniques.</li>
+  </ul>
+</section>
 
-    <h2>5. Publicités et services tiers</h2>
-    <div class="notice">
-      <p>
-        Google AdMob n'est pas actuellement intégré à
-        EngineerKit. Une intégration publicitaire pourra
-        être proposée dans une future version.
-      </p>
-      <p>
-        En cas d'intégration, cette politique sera mise
-        à jour pour expliquer les données traitées,
-        les services tiers concernés et les choix
-        proposés aux utilisateurs.
-      </p>
-    </div>
+<section>
+  <h2>9. Protection des utilisateurs</h2>
+  <p>
+    EngineerKit est destinée principalement aux
+    étudiants et aux professionnels de l'ingénierie.
+  </p>
+  <p>
+    Elle ne propose aucun mécanisme de création
+    de compte et ne collecte pas intentionnellement
+    de données personnelles concernant les utilisateurs.
+  </p>
+  <p>
+    Toute évolution susceptible de modifier les
+    pratiques de traitement des données entraînera
+    une révision de cette politique.
+  </p>
+</section>
 
-    <h2>6. Conservation et suppression</h2>
-    <p>
-      Les modalités de conservation et de suppression
-      des données seront précisées en fonction des
-      fonctionnalités réellement disponibles.
-      Les utilisateurs peuvent contacter le développeur
-      pour toute demande concernant leurs données.
-    </p>
+<section>
+  <h2>10. Droits des utilisateurs</h2>
+  <p>
+    Les utilisateurs peuvent contrôler les préférences
+    enregistrées localement et les supprimer à tout moment.
+  </p>
+  <p>
+    Pour toute question relative à la confidentialité,
+    ils peuvent contacter le développeur à l'adresse :
+    <a href="mailto:riahimarwen3@gmail.com">
+      riahimarwen3@gmail.com
+    </a>.
+  </p>
+</section>
 
-    <h2>7. Confidentialité des utilisateurs</h2>
-    <p>
-      EngineerKit s'engage à informer les utilisateurs
-      de ses pratiques de traitement des données et à
-      respecter la réglementation applicable.
-    </p>
+<section>
+  <h2>11. Modifications de la politique</h2>
+  <p>
+    Cette politique peut être actualisée pour refléter
+    les évolutions techniques, fonctionnelles ou
+    réglementaires concernant EngineerKit.
+  </p>
+  <p>
+    En cas de modification importante des pratiques
+    de traitement des données, les informations
+    correspondantes seront mises à jour.
+  </p>
+  <p>
+    La date de dernière mise à jour sera indiquée
+    en haut de cette page.
+  </p>
+</section>
 
-    <h2>8. Contact</h2>
+<section>
+  <h2>12. Contact</h2>
+  <div class="contact">
+    <p><strong>Application :</strong> EngineerKit</p>
+    <p><strong>Développeur :</strong> Marwen Riahi</p>
     <p>
-      Pour toute question concernant la confidentialité
-      ou le traitement des données :
-    </p>
-    <p>
-      <strong>Développeur :</strong> Marwen Riahi<br>
-      <strong>Email :</strong>
+      <strong>Adresse e-mail :</strong>
       <a href="mailto:riahimarwen3@gmail.com">
         riahimarwen3@gmail.com
       </a>
     </p>
+  </div>
+</section>
 
-    <h2>9. Modifications</h2>
-    <p>
-      Cette politique pourra être actualisée pour
-      refléter les évolutions de l'application.
-      La date de mise à jour sera modifiée en conséquence.
-    </p>
-  </main>
+</main>
 
-  <footer>
-    © 2026 EngineerKit — Tous droits réservés.
-  </footer>
+<footer>
+  © 2026 EngineerKit — Tous droits réservés.
+</footer>
+
 </body>
 </html>
